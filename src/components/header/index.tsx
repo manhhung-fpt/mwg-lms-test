@@ -63,7 +63,7 @@ export const Header: React.FC<RefineThemedLayoutV2HeaderProps> = ({
                 {[...(locales ?? [])].sort().map((lang: string) => (
                   // @ts-ignore
                   <MenuItem
-                    component={Link}
+                    // component={Link}
                     href={{ pathname, query }}
                     locale={lang}
                     selected={currentLocale === lang}
